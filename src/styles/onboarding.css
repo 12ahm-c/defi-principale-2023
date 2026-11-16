@@ -139,3 +139,15 @@
 @media (prefers-reduced-motion: reduce) {
   .start-button { transition: none; }
 }
+
+@media (min-width:900px) and (max-height:850px) {
+  .onboarding-content { padding-top:10px; padding-bottom:10px; grid-template-rows:auto minmax(0,1fr) auto auto; }
+  .brand-mark { width:42px; }
+  .brand-lockup { gap:10px; }
+  .brand-lockup p { font-size:24px; }
+  .intro-copy h1 { font-size:clamp(36px,3.5vw,46px); }
+  .intro-copy > p { max-width:380px; margin-top:7px; font-size:15px; }
+  .artwork-wrap { width:min(100%,43vh); border-radius:24px; }
+  .start-button { min-height:48px; font-size:22px; }
+  .privacy-note { margin-top:6px; font-size:12px; }
+}

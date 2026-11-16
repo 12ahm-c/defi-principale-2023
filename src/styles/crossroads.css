@@ -124,3 +124,23 @@
   .crossroads-actions { margin-top:10px; }
   .examine-button,.return-button { min-height:48px; }
 }
+
+@media(min-width:900px) and (max-height:850px) {
+  .crossroads-page { padding-top:5px; padding-bottom:6px; }
+  .crossroads-brand h1 { font-size:27px; }
+  .crossroads-brand > span { width:36px; height:33px; }
+  .crossroads-brand > span svg { width:23px; }
+  .crossroads-progress { width:160px; height:9px; margin-top:5px; }
+  .crossroads-progress i { width:15px; height:15px; }
+  .crossroads-header > p { margin-top:3px; font-size:12px; }
+  .crossroads-main,.crossroads-verified { margin-top:5px; }
+  .crossroads-intro { margin-bottom:5px; }
+  .crossroads-intro h2 { font-size:34px; }
+  .crossroads-intro p { margin-top:2px; font-size:13px; }
+  .next-claim-card { max-height:34vh; aspect-ratio:3.1 / 1; padding:12px 50px 0; border-radius:18px; }
+  .next-claim-camera { width:24px; height:24px; }
+  .next-claim-card h3 { margin:2px 0; font-size:18px; }
+  .next-claim-text { max-height:28px; font-size:11px; }
+  .crossroads-actions { gap:10px; margin-top:7px; }
+  .examine-button,.return-button { min-height:40px; font-size:17px; }
+}
