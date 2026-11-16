@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ipcc",
+    "officialName": "Intergovernmental Panel on Climate Change (IPCC / GIEC)",
+    "category": "scientifique_institutionnel",
+    "roleFr": "Source de référence suprême pour l'évaluation scientifique collégiale et synthétique.",
+    "keyCaveatFr": "Distinguer observations et projections. Les chiffres pré-COP26 doivent rester datés.",
+    "url": "https://www.ipcc.ch/"
+  },
+  {
+    "id": "ademe",
+    "officialName": "Agence de la transition écologique (ADEME)",
+    "category": "institutionnel",
+    "roleFr": "Source institutionnelle pour les données, scénarios et bilans français.",
+    "keyCaveatFr": "Ne pas généraliser les ratios français au reste du monde ; citer la page ou l'étude.",
+    "url": "https://www.ademe.fr/"
+  },
+  {
+    "id": "ademe_open_data",
+    "officialName": "Portail Open Data de l'ADEME (Base Carbone, ALDO, Bilans GES)",
+    "category": "outil_interactif",
+    "roleFr": "Facteurs d'émission et bilans organisationnels mesurables.",
+    "keyCaveatFr": "Données ALDO estimatives et locales ; les bilans ne sont pas une moyenne nationale.",
+    "url": "https://data.ademe.fr/"
+  },
+  {
+    "id": "transitions_2050",
+    "officialName": "ADEME - Transitions 2050",
+    "category": "institutionnel",
+    "roleFr": "Modélisation de 4 chemins prospectifs pour la France vers la neutralité carbone.",
+    "keyCaveatFr": "Modèles exploratoires basés sur des hypothèses ; pas une prévision certaine ni un dogme.",
+    "url": "https://data-transitions2050.ademe.fr/"
+  },
+  {
+    "id": "rac",
+    "officialName": "Réseau Action Climat (RAC)",
+    "category": "pedagogique_mediatique",
+    "roleFr": "Décryptage de l'urgence climatique et des solutions d'atténuation (rapport AR6).",
+    "keyCaveatFr": "Distinguer les synthèses scientifiques des plaidoyers politiques de l'ONG. Éviter la culpabilisation.",
+    "url": "https://reseauactionclimat.org/"
+  },
+  {
+    "id": "nos_gestes_climat",
+    "officialName": "Nos Gestes Climat (ADEME / ABC)",
+    "category": "outil_interactif",
+    "roleFr": "Simulateur d'empreinte carbone personnelle et leviers d'action.",
+    "keyCaveatFr": "Estimation dépendante des choix de l'utilisateur, pas un audit officiel ni un jugement moral.",
+    "url": "https://nosgestesclimat.fr/"
+  },
+  {
+    "id": "climate_qa",
+    "officialName": "Climate Q&A (Ekimetrics sur Hugging Face)",
+    "category": "outil_interactif",
+    "roleFr": "Outil d'interrogation et de recherche sémantique des rapports du GIEC/IPBES.",
+    "keyCaveatFr": "Moteur d'extraction nécessitant de vérifier l'extrait original ; pas un juge autonome.",
+    "url": "https://huggingface.co/spaces/Ekimetrics/climate-question-answering"
+  },
+  {
+    "id": "hcc",
+    "officialName": "Haut Conseil pour le climat (HCC)",
+    "category": "institutionnel",
+    "roleFr": "Évaluation indépendante des politiques publiques françaises sur le climat.",
+    "keyCaveatFr": "Distinguer rigoureusement empreinte carbone globale et émissions territoriales.",
+    "url": "https://www.hautconseilclimat.fr/"
+  },
+  {
+    "id": "cned",
+    "officialName": "Centre national d'enseignement à distance (CNED)",
+    "category": "pedagogique_mediatique",
+    "roleFr": "Modules pédagogiques sur le climat et typologie des allégations.",
+    "keyCaveatFr": "Outil d'initiation et de catégorisation, pas un vérificateur automatique.",
+    "url": "https://climat.cned.fr/formations"
+  },
+  {
+    "id": "bon_pote",
+    "officialName": "Bon Pote",
+    "category": "pedagogique_mediatique",
+    "roleFr": "Grille d'analyse des 12 discours de l'inaction climatique.",
+    "keyCaveatFr": "Permet d'identifier un schéma d'argumentation sans pour autant prouver qu'il est faux.",
+    "url": "https://bonpote.com/"
+  }
+]

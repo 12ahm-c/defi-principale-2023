@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --verite-ink: #102949;
+  --verite-ink-deep: #173b5c;
+  --verite-blue: #4c98bb;
+  --verite-blue-soft: #e3f0f6;
+  --verite-coral: #f07868;
+  --verite-paper: #fbfaf6;
+  --verite-muted: #607386;
+  --ice-blue: #E0F2FE;
+  --warning-red: #EF4444;
+  --emerald-green: #10B981;
+  --amber-context: #F59E0B;
+  --neutral-slate: #4B5563;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: var(--verite-paper);
+}
+
+button, input { font: inherit; }
+button:focus-visible, input:focus-visible, summary:focus-visible { outline: 3px solid var(--verite-blue); outline-offset: 4px; }

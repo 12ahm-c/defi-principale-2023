@@ -1,0 +1,40 @@
+{
+  "pathways": [
+    {
+      "id": "s1-generation-frugale",
+      "title": "S1 — Génération Frugale",
+      "tagline": "Sobriété forte, réduction de la consommation matérielle et alimentaire.",
+      "keyAssumptions": "Baisse de 50% de la consommation de viande, division par deux des surfaces construites.",
+      "energyMix": "100% renouvelable, très forte baisse de la demande énergétique globale.",
+      "feasibilityContext": "Nécessite des transformations culturelles et d'organisation collective profondes."
+    },
+    {
+      "id": "s2-cooperation-territoriale",
+      "title": "S2 — Coopération Territoriale",
+      "tagline": "Gouvernance locale partagée, réindustrialisation ciblée et économie circulaire.",
+      "keyAssumptions": "Partage des biens, rénovation thermique massive, circuits courts territoriaux.",
+      "energyMix": "Fort développement solaire et biomasse encadrée, maintien de l'activité.",
+      "feasibilityContext": "Implique une forte coordination entre territoires ruraux et métropoles."
+    },
+    {
+      "id": "s3-technologies-vertes",
+      "title": "S3 — Technologies Vertes",
+      "tagline": "Développement technologique vert, électrification massive et maintien des usages.",
+      "keyAssumptions": "Véhicules électriques généralisés, numérisation optimisée, efficacité poussée.",
+      "energyMix": "Nucléaire maintenu et renouvelables compétitives à grande échelle.",
+      "feasibilityContext": "Pression accrue sur les métaux stratégiques et les chaînes logistiques mondiales."
+    },
+    {
+      "id": "s4-pari-reparateur",
+      "title": "S4 — Pari Réparateur",
+      "tagline": "Maintien de la croissance matérielle compensé par la capture massive de carbone.",
+      "keyAssumptions": "Déploiement massif du captage et stockage du CO2 (CSC), régimes alimentaires peu modifiés.",
+      "energyMix": "Nucléaire de nouvelle génération, biocarburants et technologies de pointe.",
+      "feasibilityContext": "Vulnérabilité face aux incertitudes technologiques du stockage géologique du carbone."
+    }
+  ],
+  "meta": {
+    "source": "ADEME - Transitions 2050",
+    "methodologyWarning": "Ces scénarios sont des explorations prospectives basées sur des hypothèses cohérentes, et non des prévisions univoques."
+  }
+}

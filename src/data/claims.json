@@ -1,0 +1,300 @@
+[
+  {
+    "id": "claim-renewables-01",
+    "screenId": 2,
+    "sequenceOrder": 1,
+    "rawText": "Les énergies renouvelables ne servent à rien pour freiner le réchauffement.",
+    "category": "option_attenuation",
+    "indicators": {
+      "sourceIndicator": {
+        "name": "Source",
+        "hint": "IPCC / ADEME (Synthèses scientifiques)",
+        "status": "yellow"
+      },
+      "evidenceIndicator": {
+        "name": "Preuve",
+        "hint": "Données historiques 2010-2019 disponibles",
+        "status": "green"
+      },
+      "contextIndicator": {
+        "name": "Contexte",
+        "hint": "Moyenne mondiale vs réseaux locaux",
+        "status": "yellow"
+      }
+    },
+    "evaluation": "trompeur",
+    "evaluationLabelFr": "Trompeur",
+    "reasonFr": "Les énergies renouvelables constituent l'un des leviers d'atténuation les plus efficaces et leur coût s'est effondré de manière spectaculaire.",
+    "ahaInsightFr": "Les indicateurs de preuve et de source suggéraient déjà une solide assise scientifique : le solaire et l'éolien ont réduit les émissions réelles de manière mesurable.",
+    "actionablePositiveInsightFr": "Le déploiement des énergies décarbonées, couplé à la sobriété et à l'efficacité énergétique, offre des bénéfices économiques et environnementaux immédiats.",
+    "verificationCard": {
+      "source": {
+        "entity": "Groupe d'experts intergouvernemental sur l'évolution du climat (IPCC / GIEC)",
+        "sourceCategory": "scientifique_institutionnel",
+        "documentTitle": "Sixième rapport d'évaluation (AR6) - Groupe de travail III (Atténuation)",
+        "publicationDate": "2022-2023",
+        "officialUrl": "https://www.ipcc.ch/"
+      },
+      "whatWeFound": {
+        "findingQuote": "Le coût unitaire de l'énergie solaire photovoltaïque a chuté de 85 % et celui de l'éolien de 55 % entre 2010 et 2019, avec une multiplication exponentielle de leur capacité installée.",
+        "exactReference": "AR6 WG3 Summary for Policymakers (SPM), Figure SPM.3 & Section C.4",
+        "directLink": "https://www.ipcc.ch/report/ar6/wg3/"
+      },
+      "contextAndLimits": {
+        "period": "2010 - 2019 (Tendances historiques observées)",
+        "geographicScope": "Moyenne mondiale consolidée",
+        "scenarioOrModel": "Trajectoires d'atténuation compatibles avec 1.5°C et 2°C",
+        "confidenceLevel": "Degré de confiance très élevé (Very High Confidence)"
+      },
+      "whatWeDoNotKnow": "Le rapport ne préjuge pas des conditions d'intégration topographiques et des équilibres d'acceptabilité locale spécifiques à chaque réseau communal sans étude d'impact dédiée.",
+      "neutralFallbackTriggered": false
+    }
+  },
+  {
+    "id": "claim-inaction-01",
+    "screenId": 4,
+    "sequenceOrder": 1,
+    "rawText": "Nous n'avons pas à agir : la France ne représente que 1% des émissions mondiales.",
+    "category": "observation_historique",
+    "inactionDiscoursePattern": "Le déni de responsabilité / Rejeter la faute (Bon Pote #3)",
+    "indicators": {
+      "sourceIndicator": {
+        "name": "Source",
+        "hint": "Réseau Action Climat / HCC / IPCC",
+        "status": "yellow"
+      },
+      "evidenceIndicator": {
+        "name": "Preuve",
+        "hint": "Émissions territoriales vs Empreinte carbone globale",
+        "status": "green"
+      },
+      "contextIndicator": {
+        "name": "Contexte",
+        "hint": "Responsabilité historique et émissions par habitant",
+        "status": "green"
+      }
+    },
+    "evaluation": "trompeur",
+    "evaluationLabelFr": "Trompeur",
+    "reasonFr": "La France représente environ 1 % des émissions territoriales mondiales, mais son empreinte carbone globale, incluant les importations, est bien supérieure, et sa responsabilité historique et par habitant reste significative.",
+    "ahaInsightFr": "Le chiffre de 1 % masque l'empreinte carbone importée et la responsabilité historique : la France reste un acteur majeur dont les choix influencent la trajectoire mondiale.",
+    "actionablePositiveInsightFr": "Agir en France contribue à réduire l'empreinte globale et à montrer l'exemple dans la coopération internationale.",
+    "verificationCard": {
+      "source": {
+        "entity": "Réseau Action Climat (RAC) & Haut Conseil pour le climat (HCC)",
+        "sourceCategory": "pedagogique_mediatique",
+        "documentTitle": "Décryptage des discours de l'inaction / Rapport annuel du HCC",
+        "publicationDate": "2022-2026",
+        "officialUrl": "https://reseauactionclimat.org/"
+      },
+      "whatWeFound": {
+        "findingQuote": "La France représente environ 1 % des émissions mondiales territoriales, mais son empreinte carbone globale par habitant et sa responsabilité historique sont bien plus élevées.",
+        "exactReference": "RAC — décryptage de l'inaction climatique ; HCC rapport 2026",
+        "directLink": "https://reseauactionclimat.org/"
+      },
+      "contextAndLimits": {
+        "period": "2022 - 2026",
+        "geographicScope": "France / Monde",
+        "scenarioOrModel": "Empreinte carbone globale vs émissions territoriales",
+        "confidenceLevel": "Élevé pour le périmètre français"
+      },
+      "whatWeDoNotKnow": "La part exacte de la responsabilité historique dépend de la méthode de comptabilisation retenue.",
+      "neutralFallbackTriggered": false
+    }
+  },
+  {
+    "id": "claim-tech-save-02",
+    "screenId": 4,
+    "sequenceOrder": 2,
+    "rawText": "La technologie nous sauvera sans effort de sobriété.",
+    "category": "projection_conditionnelle",
+    "inactionDiscoursePattern": "Le techno-optimisme / Le pari sur la technologie",
+    "indicators": {
+      "sourceIndicator": {
+        "name": "Source",
+        "hint": "Réseau Action Climat (2022) / IPCC",
+        "status": "yellow"
+      },
+      "evidenceIndicator": {
+        "name": "Preuve",
+        "hint": "Solutions d'atténuation et captage du carbone",
+        "status": "green"
+      },
+      "contextIndicator": {
+        "name": "Contexte",
+        "hint": "Réduction réelle des émissions vs compensation",
+        "status": "yellow"
+      }
+    },
+    "evaluation": "trompeur",
+    "evaluationLabelFr": "Trompeur",
+    "reasonFr": "Le recours exclusif à la technologie sans réduction réelle des émissions est un pari à haut risque : le captage du carbone ne se substitue pas à la baisse des émissions.",
+    "ahaInsightFr": "Les solutions technologiques sont nécessaires mais insuffisantes sans sobriété et sans réduction directe des émissions.",
+    "actionablePositiveInsightFr": "Combiner innovation technologique, sobriété et efficacité énergétique pour des trajectoires robustes.",
+    "verificationCard": {
+      "source": {
+        "entity": "Réseau Action Climat (RAC) & Groupe d'experts intergouvernemental sur l'évolution du climat (IPCC / GIEC)",
+        "sourceCategory": "pedagogique_mediatique",
+        "documentTitle": "Article sur les solutions d'atténuation (RAC, 2022) / AR6 WG3",
+        "publicationDate": "2022-2023",
+        "officialUrl": "https://reseauactionclimat.org/"
+      },
+      "whatWeFound": {
+        "findingQuote": "Le captage et le stockage du carbone ne sauraient se substituer à la réduction réelle et rapide des émissions de gaz à effet de serre.",
+        "exactReference": "RAC — article sur les solutions d'atténuation (2022) ; IPCC AR6 WG3",
+        "directLink": "https://reseauactionclimat.org/"
+      },
+      "contextAndLimits": {
+        "period": "2022 - 2023",
+        "geographicScope": "Mondial",
+        "scenarioOrModel": "Atténuation et captage du carbone",
+        "confidenceLevel": "Élevé"
+      },
+      "whatWeDoNotKnow": "Les coûts et la capacité de déploiement à grande échelle des technologies de captage restent incertains.",
+      "neutralFallbackTriggered": false
+    }
+  },
+  {
+    "id": "claim-ev-context-01",
+    "screenId": 5,
+    "sequenceOrder": 1,
+    "rawText": "La voiture électrique pollue autant que la voiture thermique.",
+    "category": "observation_historique",
+    "indicators": {
+      "sourceIndicator": {
+        "name": "Source",
+        "hint": "ADEME / HCC",
+        "status": "yellow"
+      },
+      "evidenceIndicator": {
+        "name": "Preuve",
+        "hint": "Analyse du cycle de vie (ACV)",
+        "status": "green"
+      },
+      "contextIndicator": {
+        "name": "Contexte",
+        "hint": "Mix électrique et taille de la batterie",
+        "status": "yellow"
+      }
+    },
+    "evaluation": "necessite_contexte",
+    "evaluationLabelFr": "Nécessite du contexte",
+    "reasonFr": "En France, sur l'ensemble de son cycle de vie, un véhicule électrique émet 2 à 3 fois moins de gaz à effet de serre qu'un véhicule thermique, mais cette performance dépend du mix électrique et de la taille de la batterie.",
+    "ahaInsightFr": "La performance environnementale dépend fortement du contexte énergétique et de la taille de la batterie.",
+    "actionablePositiveInsightFr": "Favoriser les véhicules électriques dans un mix décarboné, tout en développant les transports en commun.",
+    "socialJusticeDimension": {
+      "principle": "Justice sociale et transition juste",
+      "insightFr": "La transition vers le véhicule électrique ne doit pas creuser les inégalités économiques : les ménages ruraux et modestes nécessitent des aides ciblées et un développement massif des transports en commun pour éviter toute précarité de mobilité.",
+      "supportingSources": ["Réseau Action Climat", "ADEME", "HCC"]
+    },
+    "verificationCard": {
+      "source": {
+        "entity": "ADEME & Haut Conseil pour le climat (HCC)",
+        "sourceCategory": "institutionnel",
+        "documentTitle": "Avis sur le véhicule électrique & Rapport annuel de neutralité",
+        "publicationDate": "2022-2026 (Rapport HCC n°8 du 9 juillet 2026)",
+        "officialUrl": "https://www.ademe.fr/"
+      },
+      "whatWeFound": {
+        "findingQuote": "Une berline électrique roulant en France rembourse sa « dette carbone » de fabrication dès 15 000 à 30 000 km, et réduit l'empreinte carbone globale d'environ 65 % par rapport à un équivalent essence.",
+        "exactReference": "ADEME - Étude ACV des véhicules électriques (2022) / HCC Rapport 2026 p. 84",
+        "directLink": "https://data.ademe.fr/"
+      },
+      "contextAndLimits": {
+        "period": "2022 - 2026",
+        "geographicScope": "France métropolitaine (Mix électrique largement décarboné)",
+        "scenarioOrModel": "Analyse du Cycle de Vie (ACV complète du berceau à la tombe)",
+        "confidenceLevel": "Fiabilité méthodologique haute pour le périmètre français"
+      },
+      "whatWeDoNotKnow": "Ces résultats ne peuvent être directement extrapolés aux pays dont le mix électrique dépend majoritairement du charbon (ex. Pologne, Inde) sans réajustement des facteurs d'émissions.",
+      "neutralFallbackTriggered": false
+    }
+  },
+  {
+    "id": "claim-buildings-insulation-01",
+    "screenId": 2,
+    "sequenceOrder": 2,
+    "rawText": "Une bonne isolation réduit les besoins de chauffage d’un logement.",
+    "category": "option_adaptation",
+    "indicators": {
+      "sourceIndicator": { "name": "Source", "hint": "ADEME", "status": "green" },
+      "evidenceIndicator": { "name": "Preuve", "hint": "Déperditions thermiques et consommation de chauffage", "status": "green" },
+      "contextIndicator": { "name": "Contexte", "hint": "Résultats liés au bâtiment et aux travaux réalisés", "status": "yellow" }
+    },
+    "evaluation": "soutenu",
+    "evaluationLabelFr": "Étayée",
+    "reasonFr": "Une isolation performante limite les pertes de chaleur et réduit les besoins de chauffage. Le résultat précis dépend du bâtiment, du climat et de la qualité des travaux.",
+    "ahaInsightFr": "L’isolation réduit les besoins énergétiques à la source ; les gains réels varient selon le logement et sa rénovation.",
+    "verificationCard": {
+      "source": {
+        "entity": "Agence de la transition écologique (ADEME)",
+        "sourceCategory": "institutionnel",
+        "documentTitle": "Tout savoir sur l’isolation",
+        "publicationDate": "12 décembre 2025",
+        "officialUrl": "https://agirpourlatransition.ademe.fr/particuliers/amenager-maison/renover/tout-savoir-isolation"
+      },
+      "whatWeFound": {
+        "findingQuote": "Une isolation performante conserve mieux la chaleur dans le logement et réduit les besoins de chauffage.",
+        "exactReference": "ADEME, Tout savoir sur l’isolation — Isoler le toit",
+        "directLink": "https://agirpourlatransition.ademe.fr/particuliers/amenager-maison/renover/tout-savoir-isolation"
+      },
+      "contextAndLimits": {
+        "period": "Dépend du bâtiment et de la période étudiée",
+        "geographicScope": "Logements en France",
+        "scenarioOrModel": "Rénovation de l’enveloppe du bâtiment",
+        "confidenceLevel": "Principe physique établi ; économies variables selon les travaux"
+      },
+      "whatWeDoNotKnow": "Sans diagnostic du logement, il est impossible d’estimer précisément les économies d’énergie réalisables.",
+      "neutralFallbackTriggered": false
+    }
+  },
+  {
+    "id": "claim-unverified-sample",
+    "screenId": 2,
+    "sequenceOrder": 99,
+    "rawText": "Affirmation non vérifiée dans nos sources.",
+    "category": "observation_historique",
+    "indicators": {
+      "sourceIndicator": {
+        "name": "Source",
+        "hint": "Corpus de référence",
+        "status": "red"
+      },
+      "evidenceIndicator": {
+        "name": "Preuve",
+        "hint": "Aucune correspondance directe",
+        "status": "red"
+      },
+      "contextIndicator": {
+        "name": "Contexte",
+        "hint": "Non applicable",
+        "status": "red"
+      }
+    },
+    "evaluation": "non_verifie",
+    "evaluationLabelFr": "Non vérifié dans nos sources",
+    "reasonFr": "Nous n'avons pas pu vérifier cette formulation à partir des sources présentées.",
+    "verificationCard": {
+      "source": {
+        "entity": "Sources scientifiques du projet (IPCC / ADEME / HCC)",
+        "sourceCategory": "scientifique_institutionnel",
+        "documentTitle": "Corpus de référence du projet Vérité Climat",
+        "publicationDate": "2026",
+        "officialUrl": "https://www.ipcc.ch/"
+      },
+      "whatWeFound": {
+        "findingQuote": "Aucun extrait textuel ou donnée quantitative directe ne correspond exactement aux termes de cette affirmation dans les rapports indexés.",
+        "exactReference": "Corpus complet Ressources.md",
+        "directLink": ""
+      },
+      "contextAndLimits": {
+        "period": "Toutes périodes",
+        "geographicScope": "Non applicable",
+        "scenarioOrModel": "Absence de correspondance directe",
+        "confidenceLevel": "Indéterminé"
+      },
+      "whatWeDoNotKnow": "L'absence de mention dans notre corpus ne permet pas de qualifier cette assertion de fausse ou de vraie.",
+      "neutralFallbackTriggered": true
+    }
+  }
+]

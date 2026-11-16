@@ -1,0 +1,76 @@
+.context-page { position:relative; min-height:100svh; overflow-x:hidden; padding:28px 24px 40px; color:var(--verite-ink); background:var(--verite-paper); }
+.context-header { position:relative; z-index:1; text-align:center; }
+.context-header h1 { margin:0; font:700 clamp(30px,6vw,44px)/1.12 Georgia,'Times New Roman',serif; letter-spacing:-.04em; }
+.context-header p { margin:10px 0 0; color:var(--verite-muted); font-size:16px; letter-spacing:.03em; }
+.context-content { position:relative; z-index:1; width:min(100%,650px); margin:25px auto 0; display:flex; flex-direction:column; align-items:center; gap:20px; }
+.context-content .viewfinder { width:100%; aspect-ratio:1.4/1; border:2px solid rgba(255,255,255,.76); border-radius:24px; }
+.context-content .claim-paper { width:72%; }
+.context-content .camera-indicators { width:100%; margin:4px auto 0; padding:16px 8px; border-radius:20px; background:#fff; box-shadow:0 5px 18px rgba(24,55,76,.06); }
+.context-content .camera-indicator + .camera-indicator::before { height:58px; }
+.context-content .indicator-icon { width:62px; height:62px; background:var(--verite-blue-soft); }
+.context-content .indicator-icon svg { width:30px; height:30px; }
+.context-content .indicator-label { font-size:15px; }
+.context-content .camera-indicator > i { width:38px; height:7px; }
+.context-action-button { width:min(100%,510px); min-height:68px; display:flex; align-items:center; justify-content:center; margin:0 auto; padding:12px 24px; border:0; border-radius:999px; color:#fff; background:var(--verite-ink-deep); box-shadow:0 8px 18px rgba(23,59,92,.12); font-weight:650; cursor:pointer; transition:transform .18s ease,background .18s ease; }
+.context-action-button:hover { transform:translateY(-2px); background:#214e72; }
+.context-result-badge { width:max-content; max-width:100%; padding:11px 20px; border-radius:999px; color:#23415b; background:var(--verite-blue-soft); font-weight:650; text-align:center; }
+.context-insight-card { width:100%; max-width:540px; padding:19px 21px; border:1px solid #e3eaeb; border-radius:18px; background:#fff; box-shadow:0 5px 20px rgba(24,55,76,.06); }
+.context-insight-card h3 { margin:0; color:var(--verite-ink); font-size:17px; }
+.context-insight-card p { margin:7px 0 0; color:var(--verite-muted); line-height:1.5; }
+.context-content .verification-card { width:100%; }
+.context-loading { min-height:100svh; display:grid; place-items:center; color:var(--verite-ink); background:var(--verite-paper); }
+@media(max-width:420px) {
+  .context-page { padding:23px 18px 30px; }
+  .context-content { gap:16px; margin-top:20px; }
+  .context-content .camera-indicators { padding:13px 2px; }
+  .context-content .indicator-label { font-size:13px; }
+}
+@media(prefers-reduced-motion:reduce) { .context-action-button { transition:none; } }
+@media(min-width:900px) {
+  .context-page { height:100svh; min-height:100svh; overflow:hidden; padding:18px 5vw 20px; background:radial-gradient(ellipse at 18% 75%,rgba(184,221,231,.25),transparent 38%),linear-gradient(135deg,#fbfaf6,#f1f6f4); }
+  .context-header h1 { font-size:42px; }
+  .context-header p { margin-top:5px; font-size:14px; }
+  .context-content { width:min(100%,1120px); height:calc(100svh - 126px); min-height:0; margin-top:12px; gap:14px; }
+  .context-content:has(.viewfinder) {
+    display:grid;
+    grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);
+    grid-template-rows:1fr auto auto;
+    align-items:center;
+    column-gap:clamp(24px,4vw,56px);
+  }
+  .context-content:has(.viewfinder) .viewfinder { grid-column:1; grid-row:1 / span 3; width:100%; max-height:64vh; aspect-ratio:1.55/1; border:1px solid rgba(255,255,255,.9); box-shadow:0 24px 60px rgba(27,57,76,.18),inset 0 1px 0 rgba(255,255,255,.28); }
+  .context-content:has(.viewfinder) > .flex { grid-column:2; grid-row:1; align-self:end; }
+  .context-content:has(.viewfinder) > .w-full { grid-column:2; grid-row:2; align-self:center; padding:12px 0; }
+  .context-content:has(.viewfinder) .context-action-button { grid-column:2; grid-row:3; align-self:start; }
+  .context-content .claim-paper { width:66%; }
+  .context-content .camera-indicators { max-width:none; padding:15px 14px; border:1px solid rgba(134,173,189,.16); background:rgba(255,255,255,.8); box-shadow:0 14px 32px rgba(30,73,98,.08); }
+  .context-content .indicator-icon { width:72px; height:72px; }
+  .context-content .indicator-label { font-size:17px; }
+  .context-content:has(.context-result-badge) {
+    display:grid;
+    grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);
+    grid-template-rows:auto auto minmax(0,1fr) auto;
+    align-items:center;
+    column-gap:clamp(22px,4vw,52px);
+    row-gap:10px;
+  }
+  .context-result-badge { grid-column:1 / -1; justify-self:center; }
+  .context-result-copy { grid-column:1 / -1; max-width:880px; margin:0 auto; color:var(--verite-muted); text-align:center; }
+  .context-content:has(.context-result-badge) .context-insight-card { grid-column:1; grid-row:3; width:100%; max-width:none; }
+  .context-content:has(.context-result-badge) .verification-card { grid-column:1; grid-row:4; max-height:32vh; overflow:auto; padding:12px 16px; }
+  .context-content:has(.context-result-badge) .iceberg-widget { grid-column:2; grid-row:3; justify-self:center; }
+  .context-content:has(.context-result-badge) .iceberg-widget img { width:clamp(100px,15vh,150px); height:auto; }
+  .context-content:has(.context-result-badge) .context-action-button { grid-column:2; grid-row:4; align-self:center; }
+  .context-insight-card { border:1px solid rgba(129,176,194,.18); background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(230,242,245,.8)); box-shadow:0 16px 38px rgba(30,73,98,.09); }
+  .context-insight-card h3 { font-size:15px; }
+  .context-insight-card p { font-size:13px; }
+  .context-result-copy { font-size:14px; }
+}
+@media(min-width:900px) and (max-height:680px) {
+  .context-page { padding-top:8px; padding-bottom:8px; }
+  .context-header h1 { font-size:32px; }
+  .context-content { height:calc(100svh - 94px); margin-top:8px; gap:8px; }
+  .context-content:has(.viewfinder) .viewfinder { max-height:58vh; }
+  .context-content:has(.context-result-badge) { row-gap:6px; }
+  .context-content:has(.context-result-badge) .verification-card { max-height:28vh; }
+}

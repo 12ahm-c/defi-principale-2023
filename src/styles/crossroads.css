@@ -1,0 +1,126 @@
+.crossroads-page { --crossroads-ink:var(--verite-ink); position:relative; min-height:100svh; overflow-x:hidden; padding:28px 42px 34px; color:var(--crossroads-ink); background:var(--verite-paper); }
+.crossroads-header { position:relative; z-index:1; display:flex; flex-direction:column; align-items:center; padding-top:10px; }
+.crossroads-brand { display:flex; align-items:center; justify-content:center; gap:16px; }
+.crossroads-brand > span { position:relative; width:54px; height:48px; display:grid; place-items:center; border-radius:13px 13px 9px 9px; color:#fff; background:#173b5c; box-shadow:inset 0 -5px 0 rgba(8,28,49,.24); }
+.crossroads-brand > span::after { position:absolute; top:-6px; left:50%; width:16px; height:14px; transform:translateX(-50%); clip-path:polygon(50% 0,100% 100%,0 100%); background:#b5deeb; content:''; }
+.crossroads-brand > span svg { position:relative; z-index:1; }
+.crossroads-brand h1 { margin:0; font:700 clamp(27px,5.2vw,40px)/1.1 Georgia,'Times New Roman',serif; letter-spacing:-.035em; }
+.crossroads-progress { width:232px; height:12px; position:relative; display:flex; justify-content:space-between; align-items:center; margin-top:30px; }
+.crossroads-progress::before { position:absolute; left:9px; right:9px; height:5px; border-radius:10px; background:#77bcd6; content:''; }
+.crossroads-progress i { position:relative; z-index:1; width:21px; height:21px; border:2px solid #74b9d4; border-radius:50%; background:#75bbd6; }
+.crossroads-progress i:last-child { background:#fbfaf6; }
+.crossroads-header > p { margin:12px 0 0; color:#182c42; font-size:18px; }
+.crossroads-header > p b { padding:0 5px; color:#75808a; font-weight:400; }
+.crossroads-mountain-line { position:absolute; z-index:0; top:101px; right:-5px; width:min(28vw,205px); fill:none; stroke:#8aa6b3; stroke-width:1; opacity:.72; }
+.crossroads-main,.crossroads-verified { position:relative; z-index:1; width:min(100%,560px); margin:42px auto 0; }
+.crossroads-intro { margin:0 0 48px; text-align:center; }
+.crossroads-intro h2 { margin:0; font:700 clamp(44px,9vw,69px)/1.08 Georgia,'Times New Roman',serif; letter-spacing:-.055em; }
+.crossroads-intro p { margin:14px 0 0; color:#24384d; font-size:clamp(17px,3.7vw,25px); line-height:1.42; }
+.next-claim-card { position:relative; width:100%; aspect-ratio:1.12/1; overflow:hidden; display:flex; flex-direction:column; align-items:center; padding:58px 40px 0; border:1px solid rgba(31,60,81,.035); border-radius:25px; background:linear-gradient(180deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.88) 47%,rgba(239,248,248,.65) 100%); box-shadow:0 7px 24px rgba(28,49,64,.07); }
+.target-corner { position:absolute; z-index:2; width:42px; height:42px; border-color:#5596b9; border-style:solid; }
+.target-top-left { top:35px; left:29px; border-width:3px 0 0 3px; border-radius:7px 0 0; }
+.target-top-right { top:35px; right:29px; border-width:3px 3px 0 0; border-radius:0 7px 0 0; }
+.target-bottom-left { bottom:32px; left:29px; border-width:0 0 3px 3px; border-radius:0 0 0 7px; }
+.target-bottom-right { right:29px; bottom:32px; border-width:0 3px 3px 0; border-radius:0 0 7px; }
+.next-claim-camera { position:relative; z-index:1; color:#102b49; }
+.next-claim-card h3 { position:relative; z-index:1; margin:14px 0 4px; font:600 clamp(24px,5vw,34px)/1.2 Georgia,'Times New Roman',serif; text-align:center; }
+.next-claim-text { position:relative; z-index:1; max-width:410px; margin:0; color:#526276; font-size:14px; line-height:1.35; text-align:center; }
+.crossroads-iceberg { position:absolute; right:0; bottom:0; left:0; width:100%; height:auto; }
+.iceberg-target { position:absolute; z-index:2; top:56%; left:50%; width:82px; height:82px; display:grid; place-items:center; transform:translate(-50%,-50%); border:1.5px solid #337494; border-top-color:transparent; border-radius:50%; color:#1b5577; background:rgba(248,252,250,.14); }
+.iceberg-target::before { position:absolute; inset:-1px; border:1.5px solid transparent; border-top-color:#337494; border-radius:50%; content:''; transform:rotate(25deg); }
+.iceberg-target i { font:300 31px/1 Inter,sans-serif; font-style:normal; }
+.crossroads-actions { display:grid; gap:19px; margin-top:48px; }
+.examine-button { width:100%; min-height:98px; display:flex; align-items:center; justify-content:center; gap:24px; padding:14px 22px; border:0; border-radius:999px; color:#fff; background:#183b5b; font:700 clamp(27px,5vw,38px)/1.1 Georgia,'Times New Roman',serif; cursor:pointer; transition:transform .18s ease,background .18s ease; }
+.examine-button:hover:not(:disabled) { transform:translateY(-2px); background:#102f50; }
+.examine-button:disabled { opacity:.7; cursor:wait; }
+.examine-button:focus-visible,.return-button:focus-visible { outline:3px solid #63a9c9; outline-offset:4px; }
+.examine-button svg { flex:0 0 auto; }
+.return-button { width:100%; min-height:74px; border:1.5px solid #3d7d9e; border-radius:999px; color:#102b49; background:rgba(255,255,255,.5); font:600 23px/1 Georgia,'Times New Roman',serif; cursor:pointer; transition:background .18s ease; }
+.return-button:hover { background:#edf5f5; }
+.crossroads-verified { margin-top:36px; }
+.verified-heading { display:flex; align-items:center; gap:14px; margin-bottom:18px; }
+.verified-heading > span { width:48px; height:48px; flex:0 0 48px; display:grid; place-items:center; border-radius:50%; color:#fff; background:#4e9ab6; }
+.verified-heading h2 { margin:0; font:700 27px/1.2 Georgia,'Times New Roman',serif; }
+.verified-heading p { margin:5px 0 0; color:#5e6e7c; font-size:14px; }
+.crossroads-verified > div:nth-of-type(2) { margin-top:18px; }
+.verified-hints { display:flex; justify-content:center; gap:23px; margin:17px 0 0; color:#587184; font-size:13px; }
+.verified-hints span { display:flex; align-items:center; gap:6px; }
+.crossroads-verified .examine-button { min-height:72px; margin-top:22px; font-size:23px; }
+.crossroads-verified .return-button { min-height:62px; margin-top:14px; font-size:19px; }
+.crossroads-page::after { position:absolute; right:-50px; bottom:-115px; width:310px; height:240px; border:1px solid #c9d9dd; border-radius:46% 54% 60% 40%; content:''; opacity:.65; box-shadow:0 -13px 0 -12px #fbfaf6,0 -14px 0 -13px #c9d9dd,0 -27px 0 -25px #fbfaf6,0 -28px 0 -26px #c9d9dd,0 -43px 0 -40px #fbfaf6,0 -44px 0 -41px #c9d9dd; pointer-events:none; }
+.crossroads-loading { min-height:100svh; display:grid; place-items:center; color:#294057; background:#fbfaf6; font-size:18px; }
+
+@media(max-width:520px) {
+  .crossroads-page { padding:24px 42px 28px; }
+  .crossroads-header { padding-top:9px; }
+  .crossroads-brand { gap:12px; }
+  .crossroads-brand > span { width:43px; height:41px; }
+  .crossroads-brand > span svg { width:27px; }
+  .crossroads-brand > span::after { width:13px; height:12px; }
+  .crossroads-brand h1 { font-size:clamp(24px,6.4vw,31px); }
+  .crossroads-progress { width:220px; margin-top:25px; }
+  .crossroads-header > p { margin-top:10px; font-size:17px; }
+  .crossroads-mountain-line { top:96px; width:120px; }
+  .crossroads-main,.crossroads-verified { margin-top:42px; }
+  .crossroads-intro { margin-bottom:42px; }
+  .crossroads-intro h2 { font-size:clamp(42px,10.5vw,54px); }
+  .crossroads-intro p { margin-top:12px; font-size:clamp(16px,4.2vw,19px); }
+  .next-claim-card { aspect-ratio:1.08/1; padding:44px 25px 0; border-radius:22px; }
+  .next-claim-camera { width:37px; height:37px; }
+  .next-claim-card h3 { margin-top:10px; font-size:clamp(22px,5.7vw,28px); }
+  .next-claim-text { max-height:38px; overflow:hidden; font-size:12px; }
+  .target-corner { width:34px; height:34px; }
+  .target-top-left { top:25px; left:22px; }
+  .target-top-right { top:25px; right:22px; }
+  .target-bottom-left { bottom:24px; left:22px; }
+  .target-bottom-right { right:22px; bottom:24px; }
+  .iceberg-target { width:68px; height:68px; }
+  .crossroads-actions { gap:15px; margin-top:30px; }
+  .examine-button { min-height:78px; font-size:29px; }
+  .return-button { min-height:62px; font-size:20px; }
+  .crossroads-verified { margin-top:32px; }
+}
+@media(max-width:380px) {
+  .crossroads-page { padding-right:27px; padding-left:27px; }
+  .crossroads-main,.crossroads-verified { margin-top:31px; }
+  .crossroads-intro { margin-bottom:31px; }
+  .next-claim-card { padding-top:38px; }
+}
+@media(prefers-reduced-motion:reduce) { .examine-button,.return-button { transition:none; } }
+
+@media(min-width:900px) {
+  .crossroads-page { height:100svh; min-height:100svh; overflow:hidden; padding:12px 6vw 16px; background:radial-gradient(ellipse at 50% 65%,rgba(193,224,232,.34),transparent 40%),linear-gradient(140deg,#fbfaf6,#f2f6f4); }
+  .crossroads-header { padding-top:0; }
+  .crossroads-brand h1 { font-size:34px; }
+  .crossroads-brand > span { width:44px; height:40px; }
+  .crossroads-brand > span svg { width:28px; }
+  .crossroads-progress { width:200px; margin-top:12px; }
+  .crossroads-header > p { margin-top:5px; font-size:15px; }
+  .crossroads-main,.crossroads-verified { width:min(100%,900px); margin-top:14px; }
+  .crossroads-intro { margin-bottom:14px; }
+  .crossroads-intro h2 { font-size:46px; }
+  .crossroads-intro p { margin-top:5px; font-size:17px; }
+  .next-claim-card { aspect-ratio:2.35 / 1; padding:22px 64px 0; border:1px solid rgba(123,170,190,.2); background:linear-gradient(150deg,rgba(255,255,255,.98),rgba(231,243,245,.83)); box-shadow:0 22px 55px rgba(26,69,95,.11),inset 0 1px 0 rgba(255,255,255,.9); }
+  .next-claim-camera { width:30px; height:30px; }
+  .next-claim-card h3 { margin-top:4px; font-size:25px; }
+  .next-claim-text { max-width:620px; font-size:15px; }
+  .crossroads-iceberg { max-height:78%; object-fit:cover; object-position:center bottom; }
+  .crossroads-actions { width:min(100%,700px); grid-template-columns:1fr 1fr; gap:18px; margin:16px auto 0; }
+  .examine-button { min-height:60px; font-size:24px; background:linear-gradient(110deg,#204969,#347b9f); box-shadow:0 12px 25px rgba(27,72,103,.2); }
+  .return-button { min-height:60px; font-size:20px; background:rgba(255,255,255,.72); box-shadow:0 8px 20px rgba(36,82,104,.06); }
+  .crossroads-verified { max-width:780px; }
+}
+
+@media(min-width:900px) and (max-height:700px) {
+  .crossroads-page { padding-top:7px; padding-bottom:8px; }
+  .crossroads-progress { margin-top:7px; }
+  .crossroads-main,.crossroads-verified { margin-top:8px; }
+  .crossroads-intro { margin-bottom:8px; }
+  .crossroads-intro h2 { font-size:38px; }
+  .crossroads-intro p { font-size:15px; }
+  .next-claim-card { aspect-ratio:2.8 / 1; padding-top:16px; }
+  .next-claim-card h3 { font-size:21px; }
+  .next-claim-text { max-height:34px; overflow:hidden; font-size:13px; }
+  .crossroads-actions { margin-top:10px; }
+  .examine-button,.return-button { min-height:48px; }
+}
